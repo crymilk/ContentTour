@@ -135,3 +135,12 @@ img:hover{
 .description5{
     font-size: 17px;
 }
+
+.box6 select,
+.box6 p{
+    text-align: center;
+    margin-top: 50px;
+    width:200px;
+    height:225px;
+    color:#ccc;
+}
