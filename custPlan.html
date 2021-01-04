@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="language" content="zh-CN">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="圣地巡礼">
+  <meta name="author" content="张三">
+  <title>(oﾟvﾟ)ノ巡礼计划</title>
+  <link href="styles/plan-style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <!-----------顶层导航栏--------->
+  <div class="topnav">
+    <a class="title">
+      <ruby>
+        圣<rp>(</rp>
+        <rt>中</rt>
+        地<rt>二</rt>
+        <rp>)</rp>
+        巡礼🚆——比宇宙🌌更远的地方
+      </ruby>
+    </a>
+    <a href="/index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;首页💖</a>
+    <a href="/sightshow.html"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; 巡礼地点💖</a>
+    <a class="active" href="/custPlan.html"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp;
+      巡礼计划💖</a>
+    <a href="/journal.html"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; 精彩巡记💖</a>
+    <span class="search-container">
+      <form action="">
+        <input type="text" placeholder="搜索.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </span>
+  </div>
+
+
+  <!-----------计划表单页面--------->
+  <form id="form">
+    <p>巡礼地点：<input required name="name" autocomplete="off" required></p>
+    <p>开始时间：<input type="date" value="2017-07-16" name="begin" required></p>
+    <p>预计结束：<input type="date" value="2057-07-16" name="end" required></p>
+    <p>参与人员：<input name="person" placeholder="多人空格分隔" required autocomplete="off"></p>
+    <p>补充说明：<textarea rows="5" placeholder="非必填" name="remark"></textarea></p>
+    <p><input type="submit" value="确定创建"></p>
+  </form>
+
+  <div id="result" class="result">
+    <table>
+      <thead>
+        <tr>
+          <th>巡礼地点</th>
+          <th>开始时间</th>
+          <th>结束时间</th>
+          <th>参与人员</th>
+          <th>补充说明</th>
+          <th width="30">操作</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="status" class="status">加载中...</div>
+  </div>
+
+  <!-- 列表数据模板 -->
+  <script id="tplList" type="text/template">
+    <tr>
+        <td data-key="name" data-id="$id$" contenteditable="plaintext-only">$name$</td>
+        <td data-key="begin" data-id="$id$" contenteditable="plaintext-only">$begin$</td>
+        <td data-key="end" data-id="$id$" contenteditable="plaintext-only">$end$</td>
+        <td data-key="person" data-id="$id$" contenteditable="plaintext-only">$person$</td>
+        <td data-key="remark" data-id="$id$" contenteditable="plaintext-only">$remark$</td>
+        <td><a href="javascript:" role="button" class="jsListDel" data-id="$id$">删除</a></td>
+    </tr></script>
+
+
+  <script src="scripts/plan-js.js"></script>
+  <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
+  <!-- <script type="text/javascript" src="/scripts/template-web.js"></script>
+  <script type="text/html" id="eachTemplate">
+      <ul>
+          <li>巡礼地点: {{key}}}</li>
+          <li>参与人员:
+              {{each person}}
+                <ol> {{$index}}{{$value}} </ol>
+              {{/each}}
+          </li>
+  
+          <li>补充说明:
+              {{each info}}
+              <ol>{{$value.name}} --- {{$value.age}} </ol>
+              {{/each}}
+          </li>
+      </ul>
+    </script>
+  <script type="text/javascript">
+    var family = {
+      key: "西武新宿线和西武池袋线",
+      person: [
+        "小A",
+        "小B",
+        "小C"
+      ],
+      info: [
+        { name: "小A", age: 23 },
+        { name: "小B", age: 26 },
+        { name: "小C", age: 22 }
+      ]
+    };
+
+    var result = template("eachTemplate", family);
+
+    var form = document.getElementById("form");
+    form.innerHTML = result;
+  </script> -->
+
+</body>

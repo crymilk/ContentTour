@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="language" content="zh-CN">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="圣地巡礼">
+  <meta name="author" content="张三">
+  <title>(oﾟvﾟ)ノ精彩巡记</title>
+  <link href="styles/journal-style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="scripts/journey-js.js"></script>
+</head>
+
+<body onload="checkCookie()">
+  <!-----------顶层导航栏--------->
+  <div class="topnav">
+    <a class="title">
+      <ruby>
+        圣<rp>(</rp>
+        <rt>中</rt>
+        地<rt>二</rt>
+        <rp>)</rp>
+        巡礼🚆——比宇宙🌌更远的地方
+      </ruby>
+    </a>
+    <a href="/index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;首页💖</a>
+    <a href="/sightshow.html"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; 巡礼地点💖</a>
+    <a href="/custPlan.html"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp;
+      巡礼计划💖</a>
+    <a class="active" href="/journal.html"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; 精彩巡记💖</a>
+    <span class="search-container">
+      <form action="">
+        <input type="text" placeholder="搜索.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </span>
+  </div>
+
+  <!-----------登录界面--------->
+  <form id="register">
+    <div>
+      <p>请先登录</p>
+    </div>
+    <div>
+      <label for="name_input">用户名:</label>
+      <input type="text" id="name_input" required />
+    </div>
+    <div>
+      <label for="password_input">密码:</label>
+      <input type="text" id="password_input" required />
+    </div>
+    <div>
+      <button>提交</button>
+    </div>
+  </form>
+  <!-----------flex布局-游记--------->
+  <div class="journalbox">
+    <div class="journal1">
+      <img src="/images/journal1.jpg" alt="/">
+      <div class="description1">
+        <a href="https://www.bilibili.com/read/cv4791285/">
+          <h2>超还原！「吹响吧！上低音号」圣地巡礼</h2>
+        </a>
+        <p>作者：itorr</p>
+        <p>
+          从 AIR
+          、Kanon、CLANNAD开始一步步变成丧心病狂的京蜜之后，吹京吹肯定也是必不可少的人生意义之一。在吹响还是新番的时候每周二晚都坐等更新、剩下一周时间不断重温，翻看兔子山之类的分析文章学习姿势、尝试从不同角度去理解分镜和原作所展现的细节。京阿尼的动画向来可以让我痴迷的投入其中。从轻音、冰菓不断变重的老镜头胶片味后期风格也深得我心，京阿尼的摄影风格已然成为了京阿尼动画的一部分。
+          如果可以到取材地转一转该多好啊？
+          抱着这个想法，一七年开始了这个「追求实景和画面一致瞬间」的京吹巡礼计划。
+        </p>
+        <br>
+        <p>相关bgm：</p>
+        <audio controls>
+          <source src="http://m701.music.126.net/20210104203136/30f4bbc5e8701dd5b84af0e9aa0acf84/jdymusic/obj/w5zDlMODwrDDiGjCn8Ky/2264291263/5062/e317/a79c/482cbab1ce9e819eaa7cce3350fc3572.mp3" type="audio/ogg">
+          您的浏览器不支持 audio 元素。
+        </audio>
+      </div>
+    </div>
+    <div class="journal2">
+      <img src="/images/journal2.jpg" alt="/">
+      <div class="description2">
+        <a href="https://www.bilibili.com/read/cv6135146">
+          <h2>最后的告白！《四月是你的谎言》圣地巡礼攻略终极保存版【软游记】</h2>
+        </a>
+        <p>作者：软软冰 </p>
+        <p>
+          这期软游记是以宫园薰最后的告白信为主线，对应她的语句穿插了相应的剧情发生的现实场景。比如开头是两人相遇的公园，生病的部分就放了实际医院的景，最后的结尾也使用了动画最终话出现的改札口。可能有人会觉得这个视频里对比好像还不够多啊，其实除了纯樱花过场的几个镜头，所有的视频里的实景都是圣地，只是部分没有加对比图。
+          为什么没有加？这是因为部分动画的画面和现实一致度较低，色调相差过大，放进去会影响整体的统一感。所以接下来在图文攻略里给大家详细解说每个场景。
+        </p>
+        <br>
+        <p>相关bgm：</p>
+        <audio controls>
+          <source src="http://m10.music.126.net/20210104202800/41b2018812b9bd1fb5b12dbd090fc2f2/ymusic/104c/042b/8787/17fc3bf4d80c676cb7335f726712d1fe.mp3" type="audio/ogg">
+          您的浏览器不支持 audio 元素。
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div class="journal3">
+    <img src="/images/journal3.jpg" alt="/">
+    <div class="description3">
+      <a href="https://tieba.baidu.com/p/6025689558?red_tag=1384521814">
+        <h2>路人女主养成方法-圣地巡礼（东京丰岛区）</h2>
+      </a>
+      <p>作者：leozhudd </p>
+      <p>
+        由于本次时间非常有限，我们要两天内在东京做四部作品的圣地巡礼（详见文末），所以本次路人女主的圣地巡礼仅限于东京丰岛区经典的のぞき坂及其周边。
+      </p>
+      <br>
+      <p>相关bgm：</p>
+      <audio controls>
+        <source src="http://m10.music.126.net/20210104203600/218b335d87878c788ff519defd7c6b2e/ymusic/obj/w5zDlMODwrDDiGjCn8Ky/3057646694/aa6b/98ca/e9be/603f03ee39fcaf9e4d304c5c5c250326.mp3" type="audio/ogg">
+        您的浏览器不支持 audio 元素。
+      </audio>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

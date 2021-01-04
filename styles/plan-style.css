@@ -1,0 +1,144 @@
+/*默认样式*/
+*{
+    box-sizing: border-box;
+    margin:0 auto;
+}
+
+body{
+    background-image: url(/images/subtle-pattern-1.jpg);
+}
+
+.topnav{
+    width:100%;
+    background-color:#A5DEE4 ;
+    overflow: hidden;
+    /*了解！*/
+}
+
+
+.topnav a{
+    float: left;
+    display: block;
+    color:white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav .title{
+    color: black;
+}
+
+ruby{
+    text-shadow: 3px 3px 1px white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.topnav a:hover{
+    background-color: #78C2C4;
+}
+
+.topnav a.active{
+    background-color: #4c9a9c;
+    font-weight: bold;
+}
+
+.topnav input[type=text]{
+    padding: 6px;
+    border:none;
+    margin-top:8px;
+    margin-right: 16px;
+}
+
+.topnav .search-container{
+    float: right;
+}
+.topnav .search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+
+/*当屏幕宽度小于600px时， 垂直堆叠显示菜单选项和搜索框*/
+@media screen and (max-width:600px)
+{
+    .topnav .search-container {
+        float: none;
+      }
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button{
+        float:none;
+        text-align: left;
+        width:100%;
+        margin:0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text]{
+        border:1px solid #ccc;
+    }
+}
+
+
+/*表单部分*/
+
+#form,
+#result{
+    width: 80%;
+    margin-top: 10px;
+    padding: 50px;
+    border: 5px solid  rgb(238, 237, 237);
+    text-align: center;
+}
+
+input, textarea {
+	padding: 8px 10px;
+	font-size: 100%;
+	font-family: inherit;
+	max-width: calc(100% - 8em);
+}
+textarea {
+	vertical-align: top;
+	width: 20em;
+}
+input[type="submit"] {
+	margin-left: 5em;
+}
+.result {
+	margin-top: 60px;
+	max-width: 600px;
+	border: 1px solid #ddd;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th, td {
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+}
+th {
+	background-color: #f5f5f5;
+	text-align: left;
+}
+.status {
+	line-height: 100px;
+	text-align: center;
+	color: gray;
+}
+.error {
+	color: red;
+}

@@ -1,0 +1,108 @@
+/**
+ * @desc 无缝轮播
+ * @author: Demigodliu
+ * @date: 2020/06/27 15:16
+ **/
+
+.swiper-container
+{
+    position:relative;
+    width:1520px;
+    height:600px;
+    overflow:hidden
+    /*
+        min-height:120px;
+        min-width:300px;
+    */
+}
+.swiper-wrapper
+{
+    position:absolute;
+    left:0;
+    height:100%
+}
+.swiper-wrapper-transition
+{
+    transition:all .8s ease 0s
+}
+.swiper-item
+{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    float:left
+}
+.swiper-btn-group
+{
+    position:absolute;
+    left:0;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    height:100%
+}
+.swiper-btn-group_prev,.swiper-btn-group_next
+{
+    position:relative;
+    width:50px;
+    height:50px;
+    margin:10px;
+    border-radius:50%;
+    transition:background-color .2s;
+    cursor:pointer
+}
+.swiper-btn-group_prev:hover,.swiper-btn-group_next:hover
+{
+    background-color:rgba(255,255,255,.1)
+}
+.swiper-btn-group_prev::before,.swiper-btn-group_next::before
+{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-30%,-50%) rotate(45deg);
+    width:15px;
+    height:15px;
+    border-color:#fff;
+    border-style:solid
+}
+.swiper-btn-group_prev::before
+{
+    border-width:0 0 2px 2px
+}
+.swiper-btn-group_next::before
+{
+    border-width:2px 2px 0 0;
+    transform:translate(-70%,-50%) rotate(45deg)
+}
+.swiper-pagination
+{
+    position:absolute;
+    left:0;
+    bottom:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;height:20px
+}
+.swiper-pagination-item
+{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background-color:rgba(255,255,255,0.45);
+    transition:all .3s
+}
+.swiper-pagination-item:not(:last-child)
+{
+    margin-right:10px
+}
+.swiper-pagination-item_active
+{
+    width:30px;
+    border-radius:5px;
+    background-color:rgba(255,255,255,0.85)
+}

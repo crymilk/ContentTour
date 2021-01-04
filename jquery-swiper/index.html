@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery轮播图插件</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/demo.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-item"><img src="./images/1.png" alt="banner"/></div>
+            <div class="swiper-item"><img src="./images/2.png" alt="banner"/></div>
+            <div class="swiper-item"><img src="./images/3.png" alt="banner"/></div>
+        </div>
+    </div>
+</body>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script>
+    $(".swiper-container").carousel({
+        width: 800,
+        height: 300,
+        speed: 3e3,
+        needPrevAndNextBtnGroup: true,
+        needPagination: true
+    });
+</script>
+</html>

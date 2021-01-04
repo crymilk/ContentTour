@@ -1,0 +1,137 @@
+/*默认样式*/
+*{
+    box-sizing: border-box;
+    margin:0 auto;
+}
+
+body{
+    background-image: url(/images/subtle-pattern-1.jpg);
+}
+
+.topnav{
+    width:100%;
+    background-color:#A5DEE4 ;
+    overflow: hidden;
+    /*了解！*/
+}
+
+
+.topnav a{
+    float: left;
+    display: block;
+    color:white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav .title{
+    color: black;
+}
+
+ruby{
+    text-shadow: 3px 3px 1px white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.topnav a:hover{
+    background-color: #78C2C4;
+}
+
+.topnav a.active{
+    background-color: #4c9a9c;
+    font-weight: bold;
+}
+
+.topnav input[type=text]{
+    padding: 6px;
+    border:none;
+    margin-top:8px;
+    margin-right: 16px;
+}
+
+.topnav .search-container{
+    float: right;
+}
+.topnav .search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+
+/*当屏幕宽度小于600px时， 垂直堆叠显示菜单选项和搜索框*/
+@media screen and (max-width:600px)
+{
+    .topnav .search-container {
+        float: none;
+      }
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button{
+        float:none;
+        text-align: left;
+        width:100%;
+        margin:0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text]{
+        border:1px solid #ccc;
+    }
+}
+
+/*grid布局*/
+.mainbox{
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    text-align: center;
+    /*通过行或列的方式来依次填充*/
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6{
+    margin-top:10px;
+    padding-top: 8px;
+    width:392px;
+    height:550px;
+    background-color:white ;
+    border: 1px solid rgb(238, 237, 237);
+    box-shadow: 0px 0px 10px grey;
+}
+
+img{
+    width:360px;
+    height:405px;
+    transition: all 1s ease;
+}
+
+
+img:hover{
+    width:376px;
+    height: 423px;
+}
+
+
+.description1,
+.description2,
+.description3,
+.description4,
+.description5{
+    font-size: 17px;
+}

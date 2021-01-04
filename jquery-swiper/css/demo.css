@@ -1,0 +1,11 @@
+body{
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+.swiper-item > img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
