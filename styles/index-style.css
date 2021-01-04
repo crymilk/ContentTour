@@ -94,6 +94,19 @@ ruby{
     
 }
 
+
+/*轮播图样式*/
+body{
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+.swiper-item > img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
 /*标题字体*/
 @font-face {
     font-family: 'webfont';

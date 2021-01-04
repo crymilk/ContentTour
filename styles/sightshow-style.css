@@ -135,3 +135,12 @@ img:hover{
 .description5{
     font-size: 17px;
 }
+
+
+.box6 select,
+.box6 h3{
+    margin-top:50px;
+    padding: 10px;
+    width:250px;
+    height: 300px;
+}
